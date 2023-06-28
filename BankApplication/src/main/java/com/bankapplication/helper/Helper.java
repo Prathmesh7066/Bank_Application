@@ -1,0 +1,12 @@
+package com.bankapplication.helper;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class Helper {
+	public static Connection getConection() throws SQLException {
+		return DriverManager.getConnection("jdbc:mysql://localhost:3306/bank", "root", "root");
+	}
+
+}
